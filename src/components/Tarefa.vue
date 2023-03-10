@@ -6,7 +6,7 @@
       </div>
       <div class="column is-3">
         <!-- a tarefa pode ou não ter um projeto alocado a ela -->
-        {{  tarefa.projeto }}
+        {{  tarefa.projeto?.nome || 'N/D' }}
       </div>
       <div class="column">
         <Cronometro :tempoEmSegundos="tarefa.duracaoEmSegundos"/>
