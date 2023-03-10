@@ -6,6 +6,7 @@
     <div class="column is-three-quarter conteudo">
       <!-- aqui vai a vue correspondente a rota  -->
       <!-- onde ele vai renderizar as rotas -->
+      <Notificacoes />
       <router-view></router-view>
     </div>
   </main>
@@ -14,11 +15,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import BarraLateral from './components/BarraLateral.vue'
+import Notificacoes from '../src/components/Notificacoes.vue'; 
 
 export default defineComponent({
   name: 'App',
   components: {
     BarraLateral,
+    Notificacoes
   },
   data () {
     return {
